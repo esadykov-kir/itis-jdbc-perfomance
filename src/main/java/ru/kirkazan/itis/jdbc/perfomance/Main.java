@@ -19,9 +19,9 @@ public class Main {
 
             for (int i = 0; i < 1000000; i++) {
                 int inserted = st.executeUpdate(
-                        "insert into test values ("+ String.valueOf(i) + " , " + String.valueOf(i) + ")");
+                        "insert into test values ("+ i + " , " + i + ")");
 
-                //logger.info("Inserted {} row(s).", inserted);
+                logger.info("Inserted {} row(s).", inserted);
             }
         } catch (SQLException e) {
             e.printStackTrace();
